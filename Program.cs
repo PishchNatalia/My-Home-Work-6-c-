@@ -14,23 +14,23 @@ for (int i = 0;i < numbers.Length;i++)
     }
  }
 Console.WriteLine();
-Console.WriteLine($"Количество чичел больше 0 = {sum}");
+Console.WriteLine($"Количество чисел больше 0 = {sum}");
 
 int[]StringToNum(string input)
 {
     int count = 1;
     for (int i = 0; i <input.Length;i++)
     {
-        if (input[i == ','])
+        if (input[i] == ',')
         {
             count++;
         }
     }
     int[] numbers = new int [count];
     int index = 0;
-    for (int i = 0; i < input/Length;i++)
+    for (int i = 0; i < input.Length;i++)
     {
-        string temp = ""$
+        string temp = "";
         while (input[i] != ',')
         {
             if(i != input.Length-1)
@@ -54,7 +54,7 @@ int[]StringToNum(string input)
         return numbers;
     }
 
-void PrintArray(int[]arrray)
+void PrintArray(int[]array)
 {
     Console.Write("[");
     for (int i = 0; i< array.Length;i++)
